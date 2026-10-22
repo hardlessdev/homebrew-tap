@@ -1,25 +1,25 @@
 class Hardless < Formula
   desc "The hardless binary: start the server, scan, tap, toggle faults, read receipts, run the MCP server."
   homepage "https://github.com/hardlessdev/hardless"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hardlessdev/hardless/releases/download/v0.1.0/hardless-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "8f7a1096a5be323e00279750f9b297024c469d03d9b3b4fd58e0d04b954db743"
+      url "https://github.com/hardlessdev/hardless/releases/download/v0.1.1/hardless-cli-aarch64-apple-darwin.tar.gz"
+      sha256 "131a106bda4ce80dd448785547711527fee5873a18e91da07ba0666184d89802"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hardlessdev/hardless/releases/download/v0.1.0/hardless-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "7f61e0152ec9afcc78be0eacb2086dd04ddfb0f98e5733d0f062f882c0bf6e69"
+      url "https://github.com/hardlessdev/hardless/releases/download/v0.1.1/hardless-cli-x86_64-apple-darwin.tar.gz"
+      sha256 "e18712a32a284b780b963fb3c71d6de55e6ef8352eec9571826001b3452e36d2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hardlessdev/hardless/releases/download/v0.1.0/hardless-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "ed3d93f4a9561321ed45713a603926553d2e4e19667b66755cbbaaef24350f87"
+      url "https://github.com/hardlessdev/hardless/releases/download/v0.1.1/hardless-cli-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "153da15ec29f301a51dfe30c7a6fb7e115ddd837944819647810593dcb52ec92"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hardlessdev/hardless/releases/download/v0.1.0/hardless-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "c03a9cc80bc28f964be0fc850cdd4f742f74c38089ce881d28851d1b55a1dc2a"
+      url "https://github.com/hardlessdev/hardless/releases/download/v0.1.1/hardless-cli-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "6d2a36e9ab5fa384134a385c524d903c2be69fa8317987a6a0fc422c9a1a31cb"
     end
   end
   license "Apache-2.0"
